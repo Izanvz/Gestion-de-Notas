@@ -89,7 +89,7 @@ export default defineComponent({
         month: 'long',
         day: 'numeric'
       }
-      return date.toLocaleDateString('es-ES', format)
+      return date.toLocaleDateString('ca-ES', format)
     }
   },
 

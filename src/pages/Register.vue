@@ -55,8 +55,8 @@
           <q-btn
             color="primary"
             class="full-width"
-            label="Login"
-            @click="login"
+            label="Register"
+            @click="register"
           />
           <div class="q-my-sm text-center">
             Tienes cuenta?
@@ -74,11 +74,11 @@
 import { defineComponent, ref } from 'vue'
 import { useQuasar } from 'quasar'
 export default defineComponent({
-  name: 'Login',
+  name: 'Register',
   setup () {
     const $q = useQuasar()
     return {
-      login () {
+      register () {
         $q.notify({
           message: 'Registrandose...',
           color: 'positive',
